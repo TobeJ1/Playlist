@@ -1,0 +1,81 @@
+body{
+
+  background-color: burlywood;
+}
+h1{
+  text-align: center;
+  position: relative;
+  top:10vh;
+}
+
+.playListContainer{
+  background-color: darkslategray;
+ 
+  color:ghostwhite;
+  position: relative;
+  top:15vh;
+  width:75%;
+  margin:0 auto;
+  border:solid gray 4px;
+  border-radius: 5px;
+}
+
+.list p{
+  text-align: center;
+ 
+}
+
+.buttonsDiv{
+
+  display: flex;
+  justify-content:center;
+  
+}
+
+.buttonsDiv button{
+  margin-right: 0.5rem;
+}
+
+.statusComponent{
+  position: relative;
+  top:5rem;
+}
+
+.audioButton{
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #ffffff;
+}
+
+.audioButton:hover{
+
+  color: yellowgreen;
+}
+
+.audioControls{
+  font-weight: 400;
+    text-align: center;
+    color: blue;
+    vertical-align: middle;
+    
+    text-transform: none;
+    border: 2px solid blue;
+    background-color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out;
+}
+
+.audioControls:hover{
+  
+  background-color: blue;
+  color: #ffffff
+}
