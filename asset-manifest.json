@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/playlist.git/static/css/main.d13c6dfd.css",
+    "main.js": "/playlist.git/static/js/main.ead1244f.js",
+    "static/js/453.2284d4dc.chunk.js": "/playlist.git/static/js/453.2284d4dc.chunk.js",
+    "index.html": "/playlist.git/index.html",
+    "main.d13c6dfd.css.map": "/playlist.git/static/css/main.d13c6dfd.css.map",
+    "main.ead1244f.js.map": "/playlist.git/static/js/main.ead1244f.js.map",
+    "453.2284d4dc.chunk.js.map": "/playlist.git/static/js/453.2284d4dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d13c6dfd.css",
+    "static/js/main.ead1244f.js"
+  ]
+}
