@@ -19,14 +19,17 @@ export function Playlist(){
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('/audio_tracks.json')
+    const fetchURL = `${process.env.PUBLIC_URL}/audio_tracks.json`;
+  
+    fetch(fetchURL)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error(`Network response was not ok, status: ${response.status}`);
         }
         return response.json();
       })
       .then(data => {
+        console.log(data);
         setAudio(data.tracks);
         if (data.tracks.length > 0) {
           // Assuming the first track is the initial state
@@ -35,9 +38,12 @@ export function Playlist(){
         }
       })
       .catch(error => {
+        console.error("Error loading tracks:", error);
         setError('Error loading tracks');
       });
   }, []);
+  
+  
   
 
   if (error) {
